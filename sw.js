@@ -27,10 +27,10 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-a729df58aeb0e34d90c8.js"
+    "url": "webpack-runtime-28bb3aa6655d062e897c.js"
   },
   {
-    "url": "styles.8ac0a08010ac3beafdc8.css"
+    "url": "styles.5bdbd54f3f3f106e8fe9.css"
   },
   {
     "url": "styles-407fe62976dc5310c43e.js"
@@ -39,11 +39,11 @@ self.__precacheManifest = [
     "url": "framework-8e528b732ab2eaadb7b7.js"
   },
   {
-    "url": "app-932db844d2ed20418e2a.js"
+    "url": "app-0f2c561b6c3e14b0a6f0.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "5592bbf27ef76ea666cb665baddf42bf"
+    "revision": "6e587b7b377d0a0c583f175f089d0ba8"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-b0556ce5127c1a3e2490.js"
@@ -54,14 +54,14 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "1fb7177ce03ea0098c1e5bc7842ca4c6"
+    "revision": "f31a271a7ee8126309c508a42fc23adc"
   },
   {
     "url": "polyfill-0ca925a8c2baff429a22.js"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "6c0807859d161d938f737ba622add416"
+    "revision": "d7f4c3aa9f6d9dbc9244051110363eed"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -148,12 +148,12 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   lastNavigationRequest = event.request.url
 
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^/leonids`), ``)
+  pathname = pathname.replace(new RegExp(`^/blog`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/leonids/app-932db844d2ed20418e2a.js`))) {
+  if (!resources || !(await caches.match(`/blog/app-0f2c561b6c3e14b0a6f0.js`))) {
     return await fetch(event.request)
   }
 
@@ -166,7 +166,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/leonids/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/blog/offline-plugin-app-shell-fallback/index.html`
   const offlineShellWithKey = workbox.precaching.getCacheKeyForURL(offlineShell)
   return await caches.match(offlineShellWithKey)
 })
