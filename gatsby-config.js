@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: 'Overreacted',
-    author: 'Dan Abramov',
-    description: 'Personal blog by Dan Abramov. I explain with words and code.',
-    siteUrl: 'https://overreacted.io',
+    title: 'Gods of Code',
+    author: 'Rohan Sen Sharma',
+    description: 'Personal blog by RSS. No Code No Life',
+    siteUrl: 'https://rss-holmes.github.io/blog/',
     social: {
-      twitter: '@dan_abramov',
+      twitter: '@rss_holmes',
     },
   },
-  pathPrefix: '/',
+  pathPrefix: '/blog',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
