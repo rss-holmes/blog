@@ -6,6 +6,12 @@ const REACT_COMPONENTS_FORM_ID = '1181861';
 const OVERREACTED_FORM_ID = '812047';
 
 class Signup extends React.Component {
+
+  _handleSubmit = async e => {
+    e.preventDefault();
+    const result = await addToMailchimp(email, listFields);
+  };
+
   render() {
     let form,
       { cta } = this.props;
@@ -30,6 +36,7 @@ class Signup extends React.Component {
     return (
       <form
         action={`https://app.convertkit.com/forms/${form.id}/subscriptions`}
+        onSubmit={_handleSubmit(email, { listFields })}
         className="seva-form formkit-form"
         method="post"
         min-width="400 500 600 700 800"

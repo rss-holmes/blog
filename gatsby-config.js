@@ -56,7 +56,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `UA-130227707-2`,
+        trackingId: `G-P6NZWYKDEX`,
       },
     },
     {
@@ -125,7 +125,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: "Gods of Code Blog RSS Feed",
+            title: 'Gods of Code Blog RSS Feed',
           },
         ],
       },
