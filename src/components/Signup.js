@@ -1,42 +1,35 @@
 import React from 'react';
-
+import addToMailchimp from 'gatsby-plugin-mailchimp';
 import './Signup.css';
 
-const REACT_COMPONENTS_FORM_ID = '1181861';
-const OVERREACTED_FORM_ID = '812047';
-
 class Signup extends React.Component {
-
   _handleSubmit = async e => {
     e.preventDefault();
-    const result = await addToMailchimp(email, listFields);
+    const result = await addToMailchimp(this.state.email, {fname: this.state.firstName});
+    this.setState({ result: result });
+    console.log("Result:: ")
+    console.log(result)
+  };
+  handleChangeEmail = event => {
+    this.setState({ email: event.target.value });
+  };
+  handleChangeFirstname = event => {
+    this.setState({ firstName: event.target.value });
   };
 
   render() {
-    let form,
-      { cta } = this.props;
-    switch (cta) {
-      case 'react':
-        form = {
-          id: REACT_COMPONENTS_FORM_ID,
-          title: 'Learn to Build Resilient React Components',
-          subTitle:
-            'Get a one week email course and learn how I think about writing React components based on 4 Principles.',
-          buttonText: 'Start Learning',
-        };
-        break;
-      default:
-        form = {
-          id: OVERREACTED_FORM_ID,
-          title: 'Subscribe to the Newsletter',
-          subTitle: 'Subscribe to get my latest content by email.',
-          buttonText: 'Subscribe',
-        };
-    }
+    let form = {
+      title: 'Subscribe to the Newsletter',
+      subTitle: 'Subscribe to get my latest content by email.',
+      buttonText:
+        this.state?.result?.result === 'success '
+          ? '👌 Success'
+          : this.state?.result?.result === "error" ? '❌ Error': '❤ Subscribe',
+    };
+
     return (
       <form
-        action={`https://app.convertkit.com/forms/${form.id}/subscriptions`}
-        onSubmit={_handleSubmit(email, { listFields })}
+        onSubmit={this._handleSubmit}
         className="seva-form formkit-form"
         method="post"
         min-width="400 500 600 700 800"
@@ -118,6 +111,7 @@ class Signup extends React.Component {
                   name="fields[first_name]"
                   placeholder="Your first name"
                   type="text"
+                  onChange={this.handleChangeFirstname}
                   style={{
                     borderColor: 'rgb(227, 227, 227)',
                     borderRadius: '4px',
@@ -135,6 +129,7 @@ class Signup extends React.Component {
                   placeholder="Your email address"
                   required
                   type="email"
+                  onChange={this.handleChangeEmail}
                   style={{
                     borderColor: 'rgb(227, 227, 227)',
                     borderRadius: '4px',
@@ -156,6 +151,7 @@ class Signup extends React.Component {
                 <div className="formkit-spinner" />
                 <span>{form.buttonText}</span>
               </button>
+              
             </div>
             <div
               data-element="guarantee"
