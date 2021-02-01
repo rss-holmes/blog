@@ -137,7 +137,7 @@ class BlogPostTemplate extends React.Component {
       enSlug.length - 1
     )}/index${lang === 'en' ? '' : '.' + lang}.md`;
     const discussUrl = `https://mobile.twitter.com/search?q=${encodeURIComponent(
-      `https://overreacted.io${enSlug}`
+      `https://rss-holmes.github.io/blog${enSlug}`
     )}`;
 
     return (
@@ -180,10 +180,10 @@ class BlogPostTemplate extends React.Component {
                 <a href={discussUrl} target="_blank" rel="noopener noreferrer">
                   Discuss on Twitter
                 </a>
-                {` • `}
+                {/* {` • `}
                 <a href={editUrl} target="_blank" rel="noopener noreferrer">
                   Edit on GitHub
-                </a>
+                </a> */}
               </p>
             </footer>
           </article>
