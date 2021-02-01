@@ -4,8 +4,6 @@ date: '2020-11-02'
 spoiler: Managing context for code blocks.
 ---
 
-# The "With" Statement(Context Managers)
-
 - used where a functionality includes a start and an exit(the period in between is called the context)
 
 ```python
