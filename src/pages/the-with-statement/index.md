@@ -1,5 +1,5 @@
 ---
-title: 'The With Statement (Context Managers)'
+title: 'The With Statement in Python'
 date: '2020-11-02'
 spoiler: Managing context for code blocks.
 ---
