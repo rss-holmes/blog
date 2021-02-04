@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gods of Code Blog RSS Feed]]></title><description><![CDATA[Personal blog by RSS. No Code No Life]]></description><link>https://rss-holmes.github.io/blog</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 04 Feb 2021 06:59:09 GMT</lastBuildDate><item><title><![CDATA[Threads and Processes in Python]]></title><description><![CDATA[Parallel processing in python.]]></description><link>https://rss-holmes.github.io/blog/threads-and-processes/</link><guid isPermaLink="false">https://rss-holmes.github.io/blog/threads-and-processes/</guid><pubDate>Thu, 03 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;threading&quot;&gt;&lt;a href=&quot;#threading&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Threading&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gods of Code Blog RSS Feed]]></title><description><![CDATA[Personal blog by RSS. No Code No Life]]></description><link>https://rss-holmes.github.io/blog</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 04 Feb 2021 15:14:48 GMT</lastBuildDate><item><title><![CDATA[Threads and Processes in Python]]></title><description><![CDATA[Parallel processing in python.]]></description><link>https://rss-holmes.github.io/blog/threads-and-processes/</link><guid isPermaLink="false">https://rss-holmes.github.io/blog/threads-and-processes/</guid><pubDate>Thu, 03 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;threading&quot;&gt;&lt;a href=&quot;#threading&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Threading&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;all threads use the same memory heap space 🧠&lt;/li&gt;
 &lt;li&gt;sharing info between threads is easy (a consequence of sharing same memory space)&lt;/li&gt;
@@ -299,28 +299,49 @@ add &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&
 
 &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;lambda&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; y&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; x &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; y&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# =&gt; this will give 8&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
                 &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at rss-holmes.github.io. You can read it online by &lt;a href=&quot;https://rss-holmes.github.io/blog/higher-functions/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
-              </content:encoded></item><item><title><![CDATA[Dunder/Underscore Methods in Python]]></title><description><![CDATA[Sprinkle some magic in your functions.]]></description><link>https://rss-holmes.github.io/blog/dunder-underscores/</link><guid isPermaLink="false">https://rss-holmes.github.io/blog/dunder-underscores/</guid><pubDate>Sun, 22 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;single-underscores-before-variables-or-function-names-pseudo-private-variables&quot;&gt;&lt;a href=&quot;#single-underscores-before-variables-or-function-names-pseudo-private-variables&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Single Underscores before variables or function names (Pseudo private variables)&lt;/h3&gt;
-&lt;p&gt;A common convention is to put &lt;strong&gt;a single&lt;/strong&gt; &lt;strong&gt;underscore before functions&lt;/strong&gt; &lt;strong&gt;or variables&lt;/strong&gt; which are  &lt;strong&gt;considered to be private&lt;/strong&gt; inside a class.However this has &lt;strong&gt;no pythonic significance&lt;/strong&gt; and the variables can still be directly accessed and mutated outside the class scope.&lt;/p&gt;
+              </content:encoded></item><item><title><![CDATA[Dunder/Underscore Methods in Python]]></title><description><![CDATA[Sprinkle some magic in your functions.]]></description><link>https://rss-holmes.github.io/blog/dunder-underscores/</link><guid isPermaLink="false">https://rss-holmes.github.io/blog/dunder-underscores/</guid><pubDate>Sun, 22 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Underscores in python have a lot of significance when used in conjunction with variables or functions.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Single&lt;/strong&gt; underscore &lt;strong&gt;before&lt;/strong&gt; a &lt;strong&gt;variable name&lt;/strong&gt; (Pseudo private variables)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;as a general convention variables with a leading underscore are &lt;strong&gt;considered to be private&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;an underscore before a variable has no pythonic significance.The python interpreter will treat it &lt;strong&gt;exactly similar&lt;/strong&gt; to one without a leading underscore.&lt;/li&gt;
+&lt;li&gt;variables with a leading underscore can still be directly accessed and mutated &lt;strong&gt;outside the class scope&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Test&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
 
     &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
         self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;foo &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;11&lt;/span&gt;
-        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;_bar &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;23&lt;/span&gt;
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;_bar &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;23&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Single&lt;/strong&gt; underscore &lt;strong&gt;before&lt;/strong&gt; a &lt;strong&gt;function name&lt;/strong&gt; (Pseudo private function)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;as a general convention variables with a leading underscore are &lt;strong&gt;considered to be private.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;an underscore before a variable has no pythonic significance.The python interpreter will treat it &lt;strong&gt;exactly similar&lt;/strong&gt; to one without a leading underscore.&lt;/li&gt;
+&lt;li&gt;functions with a leading underscore can still be directly accessed and mutated &lt;strong&gt;outside the class scope&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;another quirk of such functions are that these functions are not imported when importing from a module using *&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Test&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
 
 		&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;_some_private_function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;b&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-				&lt;span class=&quot;token comment&quot;&gt;# do something&lt;/span&gt;
-
-&lt;span class=&quot;token comment&quot;&gt;# The underscore in _bar variable and the  _some_private_function method has no particular pythonic significance.&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;# It is just used to signify that it is a private variable or function&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3 id=&quot;single-underscores-after-variables-reusing-reserved-keywords&quot;&gt;&lt;a href=&quot;#single-underscores-after-variables-reusing-reserved-keywords&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Single underscores after variables (Reusing reserved keywords)&lt;/h3&gt;
-&lt;p&gt;A common usecase for putting &lt;strong&gt;a single underscore after a variable name&lt;/strong&gt; is for setting the name to a &lt;strong&gt;reserved keyword&lt;/strong&gt; in python.This helps &lt;strong&gt;reuse reserved keywords (like class, object)&lt;/strong&gt; to name our variables if it suits our scenario.&lt;/p&gt;
+				&lt;span class=&quot;token comment&quot;&gt;# do something&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Single&lt;/strong&gt; underscore &lt;strong&gt;after&lt;/strong&gt; a &lt;strong&gt;variable name&lt;/strong&gt;(Reusing reserved keywords)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;an underscore after a variable is ofter used to reuse a reserved keyword(ex- class, object) which python doesnt allow to use normally.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;make_object&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; class_&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-		&lt;span class=&quot;token comment&quot;&gt;# here we use an underscore to create a class_ named variable which comes pretty close to the class keyword &lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;pass&lt;/span&gt;
-
-&lt;span class=&quot;token comment&quot;&gt;# a trailing underscore is often attached to a variable to bypass the python reserved words namings&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;# as class is a reserved word in python the nearest we can name a variable is class_&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3 id=&quot;double-underscores-before-variables-or-function-names-name-mangling&quot;&gt;&lt;a href=&quot;#double-underscores-before-variables-or-function-names-name-mangling&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Double underscores before variables or function names (Name Mangling)&lt;/h3&gt;
+		&lt;span class=&quot;token comment&quot;&gt;# here we use an underscore to create a class_ named variable&lt;/span&gt;
+		&lt;span class=&quot;token comment&quot;&gt;# which comes pretty close to the class keyword &lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;pass&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Double&lt;/strong&gt; underscore &lt;strong&gt;before&lt;/strong&gt; a &lt;strong&gt;variable name&lt;/strong&gt; (Name mangling)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Name Mangling&lt;/strong&gt; is a feature provided by the python interpreter wherein the interpreter &lt;strong&gt;changes the name&lt;/strong&gt; of the variable in a way that makes it &lt;strong&gt;harder to create collisions&lt;/strong&gt; when the class is extended later.&lt;/li&gt;
+&lt;li&gt;putting double underscore before a class variable directs the python interpreter to mangle the name of the variable to prevent name collisions in the future.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Let us take an example to understand this -&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Lets declare a class called &lt;strong&gt;Test&lt;/strong&gt; with different kinds of variables&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Test&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
     __init__&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
         self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;foo &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;11&lt;/span&gt;
@@ -329,9 +350,12 @@ add &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&
 
 &lt;span class=&quot;token comment&quot;&gt;# in this example if you print out all the variables of the class(using dir(Test()))&lt;/span&gt;
 &lt;span class=&quot;token comment&quot;&gt;# then foo and _bar will remain unchanged however the __baz variable will be renamed &lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;# to prevent name mangling for when the class is inherited mostly __baz becomes _Test__baz&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;ExtendedTest&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Test&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# to prevent name mangling for when the class is inherited mostly __baz becomes _Test__baz&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you print out the variables of this class then foo and _bar would remain unchanged however &lt;strong&gt;baz would be mangled by the interpreter to something like _Test&lt;/strong&gt;baz&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Lets extend this class to another class called &lt;strong&gt;ExtendedTest&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;ExtendedTest&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Test&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
     &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
     &lt;span class=&quot;token builtin&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;__init__&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
     self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;foo &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;overridden&apos;&lt;/span&gt;
@@ -340,9 +364,12 @@ add &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&
 
 &lt;span class=&quot;token comment&quot;&gt;# in this example also if you try to access the __baz attribute in an instance of &lt;/span&gt;
 &lt;span class=&quot;token comment&quot;&gt;# ExtendedTest class it will give you an attribute error as it will be mangled as&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;# _Extended_Test__baz&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;ManglingTest&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# _Extended_Test__baz&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you try to access the &lt;strong&gt;baz variable from an instance of the ExtendedTest class then you will get an error since it would be name mangled to &lt;em&gt;Extended&lt;/em&gt;Test&lt;/strong&gt;baz.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To access mangled variables we need to use &lt;strong&gt;private functions&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;ManglingTest&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
 
     __init__&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
         self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;__mangled &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;hello&apos;&lt;/span&gt;
@@ -352,61 +379,41 @@ add &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&
 
 ManglingTest&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;get_mangled&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# =&gt; &apos;hello&apos;&lt;/span&gt;
 &lt;span class=&quot;token comment&quot;&gt;# using a private function mangled functions or attributes can be accessed&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3 id=&quot;double-underscores-before-and-after--function-names-magic-methods&quot;&gt;&lt;a href=&quot;#double-underscores-before-and-after--function-names-magic-methods&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Double underscores before and after  function names (Magic Methods)&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;################################################&lt;/span&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Double&lt;/strong&gt; underscore &lt;strong&gt;before and after&lt;/strong&gt; a &lt;strong&gt;function name&lt;/strong&gt; (Magic Methods)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;in python there are some very special functions wherein the name starts and ends with double underscore.These are calles dunder/magic/special methods&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;dunder methods allow us to emulate the behavior of built-in types.These help us extend the functionality of custom classes.Some common dunder methods are -&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;”&lt;strong&gt;init&lt;/strong&gt;” This is the most famous dunder method which is called when a class is instantiated.&lt;/li&gt;
+&lt;li&gt;”&lt;strong&gt;add&lt;/strong&gt;” This is called when we use the arithmetic operator + between 2 objects of a class.&lt;/li&gt;
+&lt;li&gt;”&lt;strong&gt;repr&lt;/strong&gt;” This is called when we try to get the string representation of an object of a class.&lt;/li&gt;
+&lt;li&gt;”&lt;strong&gt;call&lt;/strong&gt;” This is used to make an object of a class callable.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;CustomClass&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 
+      
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; string&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;string &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; string  
+           
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;__repr__&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;Object: {}&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;string&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; 
+          
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;__add__&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; other&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;string &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; other
 
-&lt;span class=&quot;token comment&quot;&gt;# my_module.py&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;external_func&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;23&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;_internal_func&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;42&lt;/span&gt;
-
-&lt;span class=&quot;token comment&quot;&gt;# when a function inside a module is declared as starting with _ &lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;# it is not imported when importing from the module using *&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;# ie from module import * wont pull in _internal_func&lt;/span&gt;
-
-&lt;span class=&quot;token comment&quot;&gt;################################################&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Test&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-    __init__&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;foo &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;11&lt;/span&gt;
-        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;_bar &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;23&lt;/span&gt;
-        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;__baz &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;23&lt;/span&gt;
-
-&lt;span class=&quot;token comment&quot;&gt;# in this example if you print out all the variables of the class(using dir(Test()))&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;# then foo and _bar will remain unchanged however the __baz variable will be renamed &lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;# to prevent name mangling for when the class is inherited mostly __baz becomes _Test__baz&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;ExtendedTest&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Test&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;token builtin&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;__init__&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
-    self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;foo &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;overridden&apos;&lt;/span&gt;
-    self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;_bar &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;overridden&apos;&lt;/span&gt;
-    self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;__baz &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;overridden&apos;&lt;/span&gt;
-
-&lt;span class=&quot;token comment&quot;&gt;# in this example also if you try to access the __baz attribute in an instance of &lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;# ExtendedTest class it will give you an attribute error as it will be mangled as&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;# _Extended_Test__baz&lt;/span&gt;
-
-&lt;span class=&quot;token comment&quot;&gt;# name mangling applies to any variable or function be it inside a class or&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;# declared globally&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;ManglingTest&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-
-    __init__&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;__mangled &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;hello&apos;&lt;/span&gt;
-
-    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;get_mangled&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;__mangled
-
-ManglingTest&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;get_mangled&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# =&gt; &apos;hello&apos;&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;# using a private function mangled functions or attributes can be accessed&lt;/span&gt;
-
-&lt;span class=&quot;token comment&quot;&gt;# *************Name mangling is not applied when the function or attribute &lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;# starts and ends with __ ie like __foo__ because they are reserved in python&lt;/span&gt;
-&lt;span class=&quot;token comment&quot;&gt;# for special cases&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;token comment&quot;&gt;# Driver Code &lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; __name__ &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;__main__&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 
+      
+    &lt;span class=&quot;token comment&quot;&gt;# object creation will use the __init__ magic method&lt;/span&gt;
+    string1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; CustomClass&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Hi&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; 
+      
+    &lt;span class=&quot;token comment&quot;&gt;# concatenate String object and a string, this will use __add__ magic method for concatenating the strings&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;string1 &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos; Gods of Code&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
                 &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at rss-holmes.github.io. You can read it online by &lt;a href=&quot;https://rss-holmes.github.io/blog/dunder-underscores/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
               </content:encoded></item><item><title><![CDATA[Dictionaries in Python]]></title><description><![CDATA[The complete guide to dictionaries.]]></description><link>https://rss-holmes.github.io/blog/dictionaries/</link><guid isPermaLink="false">https://rss-holmes.github.io/blog/dictionaries/</guid><pubDate>Sat, 21 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;keypoints&quot;&gt;&lt;a href=&quot;#keypoints&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Keypoints&lt;/h3&gt;
 &lt;ul&gt;
