@@ -1,6 +1,6 @@
 ---
 title: Playing the Game of Life
-date: '2020-03-05'
+date: '2021-03-05'
 spoiler:  Ready Player One 🤖
 ---
 
