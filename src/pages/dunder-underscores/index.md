@@ -112,10 +112,10 @@ Let us take an example to understand this -
 
 - in python there are some very special functions wherein the name starts and ends with double underscore.These are calles dunder/magic/special methods
 - dunder methods allow us to emulate the behavior of built-in types.These help us extend the functionality of custom classes.Some common dunder methods are -
-    - "__init__" This is the most famous dunder method which is called when a class is instantiated.
-    - "__add__" This is called when we use the arithmetic operator + between 2 objects of a class.
-    - "__repr__" This is called when we try to get the string representation of an object of a class.
-    - "__call__" This is used to make an object of a class callable.
+    - `__init__` is the most famous dunder method which is called when a class is instantiated.
+    - `__add__` is called when we use the arithmetic operator + between 2 objects of a class.
+    - `__repr__` is called when we try to get the string representation of an object of a class.
+    - `__call__` is used to make an object of a class callable.
 
 ```python
 
