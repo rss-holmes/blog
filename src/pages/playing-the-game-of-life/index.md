@@ -46,7 +46,9 @@ Hedging our bets would mean to pick bets where the upside risk (reward for win) 
 
 Asymmetric opportunities usually have meaningful upside in a success case, and meaningful learning or development in a downside case, bringing with it a lot of optionality. So if we treat a loss as just another point which is generating options for us , we can significantly cap the downside risk of the bets we took.
 
-Armed with this knowledge if we are a bit judicious about how we play this game of life , we can significantly start reaping better rewards.Winning these asymmetric bets is all about the mindset
+## Summing it up
+
+Armed with this knowledge if we are a bit judicious about how we play this game of life , we can significantly start reaping better rewards.Winning in life is all about the mindset
 
 - Firstly we need to make peace with the fact that in life we don't need to win all the time or even many times, we need only a few wins.
 - Secondly we need to understand that the more the number or decisions/risks that we take, the more we load the odds in our favour for getting those significant wins.
@@ -57,3 +59,6 @@ Mind you these principles are easy to understand but harder to implement. As it 
 - Years spent on failed bets are often forgotten when success comes along.
 - If you are right in a bet then you win big if not then no one cares.
 - You’re not known for your losses, you’re known for your wins.
+
+
+## You have all the weapons you need. Now Fight!
